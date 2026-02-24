@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block main %}
+<div class="profile">
+    <div class="UpperProfile">
+        <img src="{{ url_for('static', filename='IMG_5821.PNG')}}" >
+        <h1>Shanice Thompson</h1>
+        <p>niah_diaries</p>
+        <p>St.Catheine, Jamaica</p>
+        <p>{{ date }}</p>
+    </div>    
+    <div class="LowerProfile">
+        <p>Hello! I’m a Computer Science major passionate about web development and creating engaging user experiences. I enjoy building projects that combine design and functionality. Let’s connect and work on something exciting together!</p>    
+        <div class="grid-container">
+            <p>100</p>
+            <p>50</p>
+            <p>650k</p>
+            <p>Posts</p>
+            <p>Following</p>
+            <p>Followers</p>
+        </div>
+        <button>Follow</button>
+    </div>
+</div>
+{% endblock %}

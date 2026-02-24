@@ -1,3 +1,92 @@
-body {
-    padding-top: 5rem;
+
+main .container {
+    display: flex;
+    flex-direction: column;  
+    justify-content: flex-start;  
+    align-items: center;  
+    text-align: center;
+    padding-top: 50px;  
+    
+}
+
+
+.profile {
+    width: 83%;
+    height: 100%;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.UpperProfile h1 {
+    color: white;
+}
+
+.LowerProfile {
+    padding-top: 10px;
+    display: flex;
+    color: gray;
+    align-items: center;
+    padding-bottom: 20px;
+    border: solid gray;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    border-width: 0px 1px 1px 1px;
+    border-bottom-left-radius: 2%;
+    border-bottom-right-radius: 2%;
+}
+
+.LowerProfile .grid-container > p:nth-child(-n+3) {
+    color: black;
+    font-weight: bold;
+}
+
+.LowerProfile button {
+    border: none;
+    width: 130px;
+    height: 35px;
+    color: white;
+    border-radius: 5px;
+    background-color: #7cd423;
+}
+
+.grid-container {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-areas: 
+    'val val val'
+    'type type type';
+    align-content: center;
+    justify-content: center;
+}
+
+.LowerProfile .grid-container * {
+    margin: 10px;
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+} 
+
+.UpperProfile {
+    color: #d2e0d4;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
+    text-shadow: 2px 2px gray;
+    background-image: radial-gradient(#7db787, #468850);
+}
+
+.UpperProfile * {
+    margin: 0px;;
+    padding: 0px;
+}
+
+.UpperProfile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px gray;
 }
